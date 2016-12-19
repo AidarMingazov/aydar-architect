@@ -1,0 +1,101 @@
+h1 {
+	font-size: 5em;	
+	font-family: arial,helvetica;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	background-image: image-url("aydar.jpg"); 
+  padding: 0;
+  width: 100%;
+}
+
+.bor{
+	border: 1px solid black;
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+	.name{
+		display: none;
+		visibility: hidden;
+	}
+	.navigator{
+		width: 90%;
+	}
+	.blog{
+		width: 10%;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+	.name{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 670px) {
+	.name{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+
+.section {
+	// text-align:center;
+}
+
+#section1,
+#section2,
+#section3,
+#section4 {
+	background-size: cover;
+}
+
+#section1 {
+	background-image: url("/assets/aydar.jpg");
+}
+
+#section2 {
+	background-image: image-url("bg2.jpg");
+	// background: grey;
+
+}
+
+#section3 {
+	background-image: image-url("bg3.jpg");
+}
+
+#section4 {
+	background-image: image-url("bg4.jpg");
+}
+
+
+.myMenu {
+	position: absolute;
+	display: block;
+	min-width: 100%;
+  z-index: 70;
+  background-color: #36bfc9;
+}
+
+.firstPage {
+  bottom: 50px;
+  z-index: 70;
+}
+.anotherPage{
+	top: 0px;
+}
+
+// ul, .myMenu{
+//     display: block;
+//     list-style-type: disc;
+//     -webkit-margin-before: 1em;
+//     -webkit-margin-after: 1em;
+//     -webkit-margin-start: 0px;
+//     -webkit-margin-end: 0px;
+//     -webkit-padding-start: 40px;
+// }
