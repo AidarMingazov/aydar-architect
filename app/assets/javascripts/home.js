@@ -1,26 +1,15 @@
 $(document).ready(function() {
-  if ( $('.fullpage-home').length ) {
-    $.fn.fullpage({
-      anchors:['1', '2', '3', '4'],
-      scrollOverflow: true,
-      css3: true,
-      menu: '.myMenu',
-      afterRender: function(){
-        // $('.menu').hide();
-        $('.myMenu').addClass('firstPage')
-      },
-      afterLoad: function(anchor, index){
-        if(index == 1){
-           // $('.menu').fadeOut("fast");
-          $('.myMenu').addClass('firstPage')
-          $('.myMenu').removeClass('anotherPage')
-        }else{
-          // $('.menu').fadeIn("fast");
-          $('.myMenu').removeClass('firstPage')
-          $('.myMenu').addClass('anotherPage')
-        }
-      },
-
-    });
-  }
+  $('#fullpage').fullpage({
+    'anchors':['1', '2', '3', '4', '5'],
+    'css3': true,
+    'scrollOverflow': true,
+    'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
+    'navigation': true,
+    'navigationPosition': 'right',
+    'navigationTooltips': ['1', '2', '3', '4', '5'],
+    menu: '.myMenu',
+    'onLeave': function(index, nextIndex, direction){
+      $('.myMenu').toggleClass('moveDown', index >= 1 && nextIndex > 1);
+    }
+  });
 });

@@ -45,7 +45,7 @@ main {
 
 
 .section {
-	// text-align:center;
+	text-align:center;
 }
 
 #section1,
@@ -61,7 +61,7 @@ main {
 
 #section2 {
 	background-image: image-url("bg2.jpg");
-	// background: grey;
+	background: grey;
 
 }
 
@@ -74,28 +74,20 @@ main {
 }
 
 
+.myMenu.moveDown{
+	top: 0;
+}
+
 .myMenu {
 	position: absolute;
-	display: block;
+	top: 90%;
 	min-width: 100%;
   z-index: 70;
   background-color: #36bfc9;
+		
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
-.firstPage {
-  bottom: 50px;
-  z-index: 70;
-}
-.anotherPage{
-	top: 0px;
-}
-
-// ul, .myMenu{
-//     display: block;
-//     list-style-type: disc;
-//     -webkit-margin-before: 1em;
-//     -webkit-margin-after: 1em;
-//     -webkit-margin-start: 0px;
-//     -webkit-margin-end: 0px;
-//     -webkit-padding-start: 40px;
-// }
