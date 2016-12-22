@@ -1,0 +1,52 @@
+.myMenu.moveDown{
+  top: 0;
+}
+
+.myMenu {
+  position: absolute;
+  top: 90%;
+  min-width: 100%;
+  z-index: 70;
+
+  background: #45b5c9; /* Old browsers */
+  background: -moz-linear-gradient(top,  #45b5c9 0%, #26cac9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #45b5c9 0%,#26cac9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #45b5c9 0%,#26cac9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45b5c9', endColorstr='#26cac9',GradientType=0 ); /* IE6-9 */
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+li a, li a:visited {
+  color: #6a7a7a;
+}
+
+li a:hover{
+  color: #fff;
+}
+
+.active>a{
+  background: none !important;
+}
+
+.name, .blog-btn>a{
+  color: #fff !important;;
+}
+
+.blog{
+
+
+.blog-btn{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  text-align: center;
+  padding: 2px 5px;
+  border: 1px solid #fff
+}

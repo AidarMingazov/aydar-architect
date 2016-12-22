@@ -1,20 +1,21 @@
 .row.full-width.myMenu
-  .small-0.medium-3.large-3.columns.name.bor
+  .small-0.medium-3.large-3.columns.name
     | Айдар Насыров
-  .small-10.medium-8.large-8.columns.navigator.bor
+  .small-10.medium-8.large-8.columns.navigator
     ul.medium-horizontal.align-right.menu
-      li data-menuanchor="page1" class=""
-        = active_link_to 'ОБО МНЕ', '#1', active: :exclusive
-      li data-menuanchor="page2" class=""
+      li data-menuanchor="5"
+        = active_link_to 'КОНТАКТЫ', '#5', active: :exclusive
+      li data-menuanchor="4"
+        = active_link_to 'РЕЗЮМЕ', '#4', active: :exclusive
+      li data-menuanchor="3"
+        = active_link_to 'ПОРТФОЛИО', '#3', active: :exclusive
+      li data-menuanchor="2"
         = active_link_to 'НАВЫКИ', '#2', active: :exclusive
-      li data-menuanchor="page3" class=""
-        a href="#3" ПОРТФОЛИО
-      li data-menuanchor="page4" class=""
-        a href="#4" РЕЗЮМЕ
-      li data-menuanchor="page5" class=""
-        a href="#5" КОНТАКТЫ
+      li data-menuanchor="1"
+        = active_link_to 'ОБО МНЕ', '#1', active: :exclusive
   
-  .small-2.medium-1.large-1.columns.blog.bor
-    ul.medium-horizontal.align-right.menu
-      li data-menuanchor="page1" class=""
-        a href="#" БЛОГ
+  .small-2.medium-1.large-1.columns.blog
+    / .medium-horizontal.align-right.menu
+    p.blog-btn
+      = active_link_to 'БЛОГ', '#', active: :exclusive    
+            

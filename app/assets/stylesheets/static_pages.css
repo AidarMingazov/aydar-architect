@@ -74,20 +74,5 @@ main {
 }
 
 
-.myMenu.moveDown{
-	top: 0;
-}
 
-.myMenu {
-	position: absolute;
-	top: 90%;
-	min-width: 100%;
-  z-index: 70;
-  background-color: #36bfc9;
-		
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
 
