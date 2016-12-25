@@ -4,29 +4,22 @@ $(document).ready(function() {
     'css3': true,
     'scrollOverflow': true,
     menu: '.myMenu',
-    'onLeave': function(index, nextIndex, direction){
+    onLeave: function(index, nextIndex, direction){
       $('.myMenu').toggleClass('moveDown', index >= 1 && nextIndex > 1);
     },
-
     afterLoad: function(anchorLink, index){
       if (index == 3){
         $('.chart').easyPieChart({
-          animate: 700
-          // easing: 'easeOutBounce',
-          // animate: 700,
-          // onStep: function(from, to, percent) {
-          //     $(this.el).find('.percent').text(Math.round(percent));
-          // }
+          trackColor: '#6a7a7a',
+          barColor:'#34c1c8',
+          duration: 900, enabled: true,
+          onStep: function(from, to, percent) {
+            $('.percent').text(Math.round(percent));
+          }
         });
-
-        // $('.chart').easyPieChart({
-        //   easing: 'easeOutBounce',
-        //   onStep: function(from, to, percent) {
-        //     $(this.el).find('.percent').text(Math.round(percent));
-        //   }
-        // });
-
       }
     }
   });
 });
+
+
