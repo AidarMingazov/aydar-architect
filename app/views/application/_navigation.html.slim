@@ -3,16 +3,16 @@
     | Айдар Насыров
   .small-10.medium-8.large-8.columns.navigator
     ul.medium-horizontal.align-right.menu
+      li data-menuanchor="6"
+        = active_link_to 'КОНТАКТЫ', '#6', active: :exclusive
       li data-menuanchor="5"
-        = active_link_to 'КОНТАКТЫ', '#5', active: :exclusive
+        = active_link_to 'РЕЗЮМЕ', '#5', active: :exclusive
       li data-menuanchor="4"
-        = active_link_to 'РЕЗЮМЕ', '#4', active: :exclusive
+        = active_link_to 'ПОРТФОЛИО', '#4', active: :exclusive
       li data-menuanchor="3"
-        = active_link_to 'ПОРТФОЛИО', '#3', active: :exclusive
+        = active_link_to 'НАВЫКИ', '#3', active: :exclusive
       li data-menuanchor="2"
-        = active_link_to 'НАВЫКИ', '#2', active: :exclusive
-      li data-menuanchor="1"
-        = active_link_to 'ОБО МНЕ', '#1', active: :exclusive
+        = active_link_to 'ОБО МНЕ', '#2', active: :exclusive
   
   .small-2.medium-1.large-1.columns.blog
     .medium-horizontal.align-right.menu
