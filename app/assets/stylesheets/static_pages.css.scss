@@ -16,6 +16,17 @@ h1 {
 	border: 1px solid black;
 }
 
+.pad-lf-rg-24{
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.pad-rg-0{
+	// padding-left: 0px !important; 
+	padding-right: 0px !important;
+}
+.pad-0{
+	padding: 0px 0px;
+}
 
 @media only screen and (min-width: 500px) and (max-width: 900px) {
 	.name{

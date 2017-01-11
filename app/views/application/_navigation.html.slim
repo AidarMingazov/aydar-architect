@@ -1,6 +1,10 @@
-.row.full-width.myMenu
-  .small-0.medium-3.large-3.columns.name
-    | Айдар Насыров
+.myMenu.top-bar
+  .small-0.medium-1.large-1.columns.no-empty
+  .small-0.medium-2.large-2.columns.pad-rg-0
+    ul.medium-horizontal.menu.pad-rg-0
+      li data-menuanchor="1"
+        = active_link_to 'Айдар Насыров', '#1', class: 'name pad-rg-0', active: :exclusive
+
   .small-10.medium-8.large-8.columns.navigator
     ul.medium-horizontal.align-right.menu
       li data-menuanchor="6"
@@ -15,7 +19,4 @@
         = active_link_to 'ОБО МНЕ', '#2', active: :exclusive
   
   .small-2.medium-1.large-1.columns.blog
-    .medium-horizontal.align-right.menu
-      p.blog-btn
-        = active_link_to 'БЛОГ', '#', active: :exclusive    
-            
+    = link_to 'БЛОГ', '/blog', class: 'blog-btn'

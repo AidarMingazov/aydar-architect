@@ -1,53 +1,58 @@
 #fullpage
   = render 'navigation'
+
   #section1.section.moveDown
-
+    .myfooter.back-grey
+      = render 'footer'
   #section2.section.moveDown
-
+    .myfooter.back-white
+      = render 'footer'
   #section3.section.moveDown
     #skills.text-center
       .container
-        .row.full-width
-          .section-title.center
-            h2 НАВЫКИ
-            hr
+        .small-0.medium-1.large-1.columns.no-empty
 
-        .row.full-width.pies-row-container
-          .small-4.medium-4.large-4.columns.skill
-            span.chart data-percent="95" 
-              span.percent 0
-            h4 Auto CAD
+        .small-10.medium-10.large-10.columns
+          .row.pad-lf-rg-24
+            .section-title.center
+              h2 НАВЫКИ
+              hr
 
-          .small-4.medium-4.large-4.columns.skill
-            span.chart data-percent="85" 
-              span.percent 0
-            h4 Sketch Up
+          .row.pad-lf-rg-24
+            .small-4.medium-4.large-4.columns.skill
+              span.chart data-percent="95" 
+                span.percent 0
+              h4 AutoCAD
 
-          .small-4.medium-4.large-4.columns.skill
-            span.chart data-percent="15" 
-              span.percent 0
-            h4 3ds MAX
-
-        .row.full-width.pies-row-container
-          .small-4.medium-4.large-4.columns
-            .skill
+            .small-4.medium-4.large-4.columns.skill
               span.chart data-percent="85" 
                 span.percent 0
-              h4 Corel Draw
+              h4 SketchUp
 
-          .small-4.medium-4.large-4.columns
-            .skill
+            .small-4.medium-4.large-4.columns.skill
+              span.chart data-percent="15" 
+                span.percent 0
+              h4 3dsMAX
+
+          .row.pad-lf-rg-24
+            .small-4.medium-4.large-4.columns.skill
+              span.chart data-percent="85" 
+                span.percent 0
+              h4 CorelDraw
+
+            .small-4.medium-4.large-4.columns.skill
               span.chart data-percent="60" 
                 span.percent 0
               h4 Photoshop
 
-          .small-4.medium-4.large-4.columns
-            .skill
-              span.chart data-percent="15" 
+            .small-4.medium-4.large-4.columns.skill           
+              span.chart data-percent="15"
                 span.percent 0
               h4 Revit
-
-
+        
+        .small-2.medium-1.large-1.columns.no-empty
+      .myfooter.back-grey
+        = render 'footer'
   #section4.section.moveDown
     .portfolio
       .button-group.filters-button-group
@@ -56,68 +61,153 @@
         button.button data-filter=".training"  практика
         button.button data-filter=".design"  дизайн
       .row.grid
-        .grid-item.concept.small-4.medium-4.large-4.columns data-category="concept" 
+        .grid-item.concept.grid-item data-category="concept" 
           h3.name Mercury
           = image_tag('portfolio/1.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.grid-item--width2.concept.small-4.medium-4.large-4.columns data-category="concept" 
+        .grid-item.grid-item--width2.concept data-category="concept" 
           h3.name Tellurium
           = image_tag('portfolio/2.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.training.small-4.medium-4.large-4.columns data-category="training" 
+        .grid-item.training.grid-item data-category="training" 
           h3.name Lead
           = image_tag('portfolio/3.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.training.small-4.medium-4.large-4.columns data-category="training" 
+      .row.grid
+        .grid-item.training.grid-item--width1-5 data-category="training" 
           h3.name Mercury
           = image_tag('portfolio/4.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.grid-item--width2.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design.grid-item data-category="design" 
           h3.name Tellurium
           = image_tag('portfolio/5.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design.grid-item--width1-5 data-category="design" 
           h3.name Lead
           = image_tag('portfolio/6.jpg', alt: 'Project Title', class: ['img-responsive'])
 
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design data-category="design" 
           h3.name Lead
           = image_tag('portfolio/7.jpg', alt: 'Project Title', class: ['img-responsive'])
 
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design data-category="design" 
           h3.name Lead
           = image_tag('portfolio/8.jpg', alt: 'Project Title', class: ['img-responsive'])
 
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design data-category="design" 
           h3.name Lead
           = image_tag('portfolio/9.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design data-category="design" 
           h3.name Lead
 
           = image_tag('portfolio/10.jpg', alt: 'Project Title', class: ['img-responsive'])
 
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design data-category="design" 
           h3.name Lead
           = image_tag('portfolio/11.jpg', alt: 'Project Title', class: ['img-responsive'])
 
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design data-category="design" 
           h3.name Lead
           = image_tag('portfolio/12.jpg', alt: 'Project Title', class: ['img-responsive'])
 
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design data-category="design" 
           h3.name Lead
           = image_tag('portfolio/13.jpg', alt: 'Project Title', class: ['img-responsive'])
 
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design data-category="design" 
           h3.name Lead
           = image_tag('portfolio/14.jpg', alt: 'Project Title', class: ['img-responsive'])
 
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design data-category="design" 
           h3.name Lead
           = image_tag('portfolio/15.jpg', alt: 'Project Title', class: ['img-responsive'])
 
-        .grid-item.design.small-4.medium-4.large-4.columns data-category="design" 
+        .grid-item.design data-category="design" 
           h3.name Lead
           = image_tag('portfolio/16.jpg', alt: 'Project Title', class: ['img-responsive'])
+    
+    .myfooter.back-white
+        = render 'footer'
+
+
 
   #section5.section.moveDown
-    h1 резюме
+    .row
+      .container
+        .small-0.medium-1.large-1.columns.no-empty
+
+        .small-10.medium-10.large-10.columns
+          .row.pad-lf-rg-24
+            .section-title.center
+              h2 ОПЫТ
+              hr
+            .div
+              .div
+                h3 СТУДИЯ АРХИТЕКТУРЫ И УБРАНИСТИКИ
+                span Petro IERONIMO
+                span и
+                span Massimo DE MARIA
+                span ПОМОЩНИК АРХИТЕКТОРА
+              .div
+                span 2015
+            .div
+              .div
+                h3 IP-GROUP
+                span ПОМОЩНИК АРХИТЕКТОРА-ДИЗАЙНЕРА
+              .div
+                span 2013
+                span -
+                span 2015
+
+            .div
+              .div
+                h3 ИДЕЛЬ
+                span ПРОЕКТИРОВЩИК
+              .div
+                span 2012
+                span -
+                span 2013
+        .small-2.medium-1.large-1.columns.no-empty
+
+    .row
+      .container
+        .small-0.medium-1.large-1.columns.no-empty
+        .small-10.medium-10.large-10.columns
+          .row.pad-lf-rg-24
+            .section-title.center
+              h2 ОБРАЗОВАНИЕ
+              hr
+            .div
+              .div
+                h3 КАЗАНСКИЙ ГОСУДАРСТВЕННЫЙ 
+                h3 АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ УНИВЕРСИТЕТ
+                span АСПИРАТН
+              .div
+                span 2016
+                span -
+                span НАСТОЯЩИЕ ВРЕМЯ
+            .div
+              .div
+                h3 КАЗАНСКИЙ ГОСУДАРСТВЕННЫЙ 
+                h3 АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ УНИВЕРСИТЕТ
+                span СПЕЦИАЛИСТ
+              .div
+                span 2010
+                span -
+                span 2016
+
+            .div
+              .div
+                h3 ЛИЦЕЙ-ИНТЕРНАТ №7
+                span ПОЛНОЕ СРЕДНЕЕ ОБРАЗОВАНИЕ
+              .div
+                span 2005
+                span -
+                span 2013
+
+        .small-2.medium-1.large-1.columns.no-empty
+    .myfooter.back-grey
+      = render 'footer'
+
 
   #section6.section.moveDown
     h1 contact
+    .myfooter.back-grey
+      = render 'footer'
+
 

@@ -2,8 +2,12 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     'anchors':['1', '2', '3', '4', '5', '6'],
     'css3': true,
+    'scrollingSpeed': 900,
     'scrollOverflow': true,
+    'lazyLoading': true,
     menu: '.myMenu',
+    // 'fixedElements': '.footer1',
+    // 'normalScrollElements': '.portfolio',
     onLeave: function(index, nextIndex, direction){
       $('.myMenu').toggleClass('moveDown', index >= 1 && nextIndex > 1);
 
@@ -13,7 +17,8 @@ $(document).ready(function() {
           $('.chart').easyPieChart({
             trackColor: '#6a7a7a',
             barColor:'#34c1c8',
-            duration: 900, enabled: true,
+            duration: 900,
+            animate: 2000,
             onStep: function(from, to, percent) {
               $(this.el).find('.percent').text(Math.round(percent));
             }
@@ -26,6 +31,11 @@ $(document).ready(function() {
       if (index == 4){
         // init Isotope
         var $grid = $('.grid').isotope({
+          animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+          },
           itemSelector: '.grid-item',
           layoutMode: 'fitRows'
         });
