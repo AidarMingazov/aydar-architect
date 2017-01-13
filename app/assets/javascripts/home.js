@@ -15,7 +15,7 @@ $(document).ready(function() {
       if (nextIndex == 3){
         setTimeout(function(){
           $('.chart').easyPieChart({
-            trackColor: '#6a7a7a',
+            trackColor: '#e2e4e3',
             barColor:'#34c1c8',
             duration: 900,
             animate: 2000,
