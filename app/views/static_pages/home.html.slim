@@ -4,129 +4,119 @@
   #section1.section.moveDown
     .myfooter.back-grey
       = render 'footer'
-  #section2.section.moveDown
+  #section2.section
     .myfooter.back-white
       = render 'footer'
-  #section3.section.moveDown
-    #skills.text-center
+  #section3.section
+    #skills
       .container
         .small-0.medium-1.large-1.columns.no-empty
-
         .small-10.medium-10.large-10.columns
           .row.pad-lf-rg-24
             .section-title.center
-              h2 НАВЫКИ
+              span НАВЫКИ
               hr
-
           .row.pad-lf-rg-24
             .small-4.medium-4.large-4.columns.skill
               span.chart data-percent="95" 
                 span.percent 0
               h4 AutoCAD
-
             .small-4.medium-4.large-4.columns.skill
               span.chart data-percent="85" 
                 span.percent 0
               h4 SketchUp
-
             .small-4.medium-4.large-4.columns.skill
               span.chart data-percent="15" 
                 span.percent 0
               h4 3dsMAX
-
           .row.pad-lf-rg-24
             .small-4.medium-4.large-4.columns.skill
               span.chart data-percent="85" 
                 span.percent 0
               h4 CorelDraw
-
             .small-4.medium-4.large-4.columns.skill
               span.chart data-percent="60" 
                 span.percent 0
               h4 Photoshop
-
             .small-4.medium-4.large-4.columns.skill           
               span.chart data-percent="15"
                 span.percent 0
               h4 Revit
-        
         .small-2.medium-1.large-1.columns.no-empty
-      .myfooter.back-grey
-        = render 'footer'
-  #section4.section.moveDown
+    .myfooter.back-grey
+      = render 'footer'
+
+  #section4.section
     .portfolio
-      .button-group.filters-button-group
-        button.button.is-checked data-filter="*"  Все
-        button.button data-filter=".concept"  концепции
-        button.button data-filter=".training"  практика
-        button.button data-filter=".design"  дизайн
-      .row.grid
-        .grid-item.concept.grid-item data-category="concept" 
-          h3.name Mercury
-          = image_tag('portfolio/1.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.grid-item--width2.concept data-category="concept" 
-          h3.name Tellurium
-          = image_tag('portfolio/2.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.training.grid-item data-category="training" 
-          h3.name Lead
-          = image_tag('portfolio/3.jpg', alt: 'Project Title', class: ['img-responsive'])
-      .row.grid
-        .grid-item.training.grid-item--width1-5 data-category="training" 
-          h3.name Mercury
-          = image_tag('portfolio/4.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.design.grid-item data-category="design" 
-          h3.name Tellurium
-          = image_tag('portfolio/5.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.design.grid-item--width1-5 data-category="design" 
-          h3.name Lead
-          = image_tag('portfolio/6.jpg', alt: 'Project Title', class: ['img-responsive'])
+      .container
+        .small-0.medium-1.large-1.columns.no-empty
+        .small-10.medium-10.large-10.columns.portfolio-pad
+          .row.pad-lf-rg-24
+            .section-title.center
+              span ПОРТФОЛИО
+              hr
+          .row.pad-lf-rg-24
+            .button-group.filters-button-group
+              button.button.is-checked data-filter="*"  Все
+              button.button data-filter=".concept"  концепции
+              button.button data-filter=".training"  практика
+              button.button data-filter=".design"  дизайн
 
-        .grid-item.design data-category="design" 
-          h3.name Lead
-          = image_tag('portfolio/7.jpg', alt: 'Project Title', class: ['img-responsive'])
+          .row.grid.pad-lf-rg-24
+            .grid-item.concept.grid-item data-category="concept" 
+              h3.name Mercury
+              = image_tag('portfolio/1.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.grid-item--width2.concept data-category="concept" 
+              h3.name Tellurium
+              = image_tag('portfolio/2.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.training.grid-item data-category="training" 
+              h3.name Lead
+              = image_tag('portfolio/3.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.training.grid-item--width1-5 data-category="training" 
+              h3.name Mercury
+              = image_tag('portfolio/4.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design.grid-item data-category="design" 
+              h3.name Tellurium
+              = image_tag('portfolio/5.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design.grid-item--width1-5 data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/6.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/7.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/8.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/9.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/10.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/11.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/12.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/13.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/14.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/15.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .grid-item.design data-category="design" 
+              h3.name Lead
+              = image_tag('portfolio/16.jpg', alt: 'Project Title', class: ['img-responsive'])
 
-        .grid-item.design data-category="design" 
-          h3.name Lead
-          = image_tag('portfolio/8.jpg', alt: 'Project Title', class: ['img-responsive'])
-
-        .grid-item.design data-category="design" 
-          h3.name Lead
-          = image_tag('portfolio/9.jpg', alt: 'Project Title', class: ['img-responsive'])
-        .grid-item.design data-category="design" 
-          h3.name Lead
-
-          = image_tag('portfolio/10.jpg', alt: 'Project Title', class: ['img-responsive'])
-
-        .grid-item.design data-category="design" 
-          h3.name Lead
-          = image_tag('portfolio/11.jpg', alt: 'Project Title', class: ['img-responsive'])
-
-        .grid-item.design data-category="design" 
-          h3.name Lead
-          = image_tag('portfolio/12.jpg', alt: 'Project Title', class: ['img-responsive'])
-
-        .grid-item.design data-category="design" 
-          h3.name Lead
-          = image_tag('portfolio/13.jpg', alt: 'Project Title', class: ['img-responsive'])
-
-        .grid-item.design data-category="design" 
-          h3.name Lead
-          = image_tag('portfolio/14.jpg', alt: 'Project Title', class: ['img-responsive'])
-
-        .grid-item.design data-category="design" 
-          h3.name Lead
-          = image_tag('portfolio/15.jpg', alt: 'Project Title', class: ['img-responsive'])
-
-        .grid-item.design data-category="design" 
-          h3.name Lead
-          = image_tag('portfolio/16.jpg', alt: 'Project Title', class: ['img-responsive'])
-    
+        .small-2.medium-1.large-1.columns.no-empty
     .myfooter.back-white
-        = render 'footer'
+      = render 'footer'
 
-
-
-  #section5.section.moveDown
+  #section5.section
     .row
       .container
         .small-0.medium-1.large-1.columns.no-empty
@@ -204,8 +194,37 @@
     .myfooter.back-grey
       = render 'footer'
 
+  
+  / #section6.section.moveDown data-percentage="80" data-centered="true"
+  #section6.section.fp-auto-height
+    .stat
+      .small-0.medium-1.large-1.columns.no-empty
+      .small-10.medium-10.large-10.columns
+        .row.pad-lf-rg-24
+          .section-title.center
+            h2.white-h2 СТАТИСТИКА
+            hr
+        .row
+          .medium-3.large-3.columns
+            .spincrement 15
+            div ДОВОЛЬНЫХ КЛИЕНТОВ
+          .medium-3.large-3.columns
+            .spincrement 2600
+            div ЧАСОВ РАБОТЫ
+          .medium-3.large-3.columns
+            .spincrement 6000
+            div ЧАСОВ ОБУЧЕНИЯ
+          .medium-3.large-3.columns
+            .spincrement 3
+            div ГОДА ОПЫТА
 
-  #section6.section.moveDown
+      .small-2.medium-1.large-1.columns.no-empty
+
+      .div.stat-footer
+        .myfooter.back-white
+          = render 'footer'
+
+  #section7.section
     h1 contact
     .myfooter.back-grey
       = render 'footer'

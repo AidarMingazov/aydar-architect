@@ -1,6 +1,20 @@
-.portfolio{
-  padding: 75px 10px;
+.portfolio span {
+  font-size: 26px;
+  color: #fff;
 }
+.portfolio hr {
+  background: rgba(255,255,255,0.3);
+}
+
+.portfolio{
+  padding: 75px 0;
+}
+
+.portfolio-pad{
+  padding-bottom: 100px;
+
+}
+
 .button {
   display: inline-block;
   padding: 0.5em 1.0em;

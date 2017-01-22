@@ -1,16 +1,17 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    'anchors':['1', '2', '3', '4', '5', '6'],
-    'css3': true,
-    'scrollingSpeed': 900,
-    'scrollOverflow': true,
-    'lazyLoading': true,
+    anchors:['1', '2', '3', '4', '5', '6', '7'],
+    css3: true,
+    scrollingSpeed: 900,
+    scrollOverflow: true,
+    offsetSections: true,
+    lazyLoading: true,
     menu: '.myMenu',
-    // 'fixedElements': '.footer1',
+    // 'fixedElements': '.myfooter',
     // 'normalScrollElements': '.portfolio',
     onLeave: function(index, nextIndex, direction){
       $('.myMenu').toggleClass('moveDown', index >= 1 && nextIndex > 1);
-
+      
       // easyPieChart init
       if (nextIndex == 3){
         setTimeout(function(){
@@ -26,6 +27,16 @@ $(document).ready(function() {
         // easyPieChart init time
         }, 250);
       }
+
+      //incrementalNumber
+      if (nextIndex == 6){
+        $('.spincrement').spincrement({
+          from: 0,
+          duration: 1500,
+          easing: 'easeInCirc'
+        });
+      }
+
     },
     afterLoad: function(anchorLink, index){
       if (index == 4){
@@ -45,11 +56,6 @@ $(document).ready(function() {
           numberGreaterThan50: function() {
             var number = $(this).find('.number').text();
             return parseInt( number, 10 ) > 50;
-          },
-          // show if name ends with -ium
-          ium: function() {
-            var name = $(this).find('.name').text();
-            return name.match( /ium$/ );
           }
         };
         // bind filter button click
@@ -58,6 +64,10 @@ $(document).ready(function() {
           // use filterFn if matches value
           filterValue = filterFns[ filterValue ] || filterValue;
           $grid.isotope({ filter: filterValue });
+
+          // for footer
+          $('.portfolio').css({"height":($(window).height()+"px")});
+
         });
         // change is-checked class on buttons
         $('.button-group').each( function( i, buttonGroup ) {
@@ -68,6 +78,20 @@ $(document).ready(function() {
           });
         });
       }
+
+
+      // // CounterUp
+      // if (index == 6){
+      //   $(document).ready(function( $ ) {
+      //     if($("span.count").length > 0){ 
+      //       $('span.count').counterUp({
+      //         delay: 10, // the delay time in ms
+      //         time: 1500 // the speed time in ms
+      //       });
+      //     }
+      //   });
+      // }
+
     }
   });
 });

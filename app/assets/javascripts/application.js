@@ -7,11 +7,3 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
-
-
-// $(document).ready(function() {
-
-
-
-// });
-

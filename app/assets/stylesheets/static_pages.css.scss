@@ -44,6 +44,10 @@ li{
 	padding: 0px 0px;
 }
 
+.white-h2{
+	color: #fff;
+}
+
 @media only screen and (min-width: 500px) and (max-width: 900px) {
 	.name{
 		display: none;
@@ -75,10 +79,7 @@ li{
 	text-align:center;
 }
 
-#section1,
-#section2,
-#section3,
-#section4 {
+#section1{
 	background-size: cover;
 }
 
@@ -95,5 +96,16 @@ li{
 
 #section4 {
 	background: #6e6e6e;
+	text-align: normal;
+
 }
 
+#section6{
+	background: #6e6e6e;
+}
+
+// #section6,
+// #section6 .fp-slide,
+// #section6 .fp-tableCell{
+//     height: auto !important;
+// }
