@@ -5,6 +5,7 @@ $(document).ready(function() {
     scrollingSpeed: 900,
     scrollOverflow: true,
     offsetSections: true,
+    verticalCentered: false,
     lazyLoading: true,
     menu: '.myMenu',
     // 'fixedElements': '.myfooter',

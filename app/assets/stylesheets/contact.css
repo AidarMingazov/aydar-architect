@@ -1,0 +1,34 @@
+.contact span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #6d6d6d;
+}
+.contact hr {
+  background: rgba(255,255,255,0.3);
+}
+.contact{
+  padding: 100px 0;
+}
+.contact-pad{
+  padding-bottom: 150px;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #636363;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}

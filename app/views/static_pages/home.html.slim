@@ -1,6 +1,5 @@
 #fullpage
   = render 'navigation'
-
   #section1.section.moveDown
     .myfooter.back-grey
       = render 'footer'
@@ -61,7 +60,6 @@
               button.button data-filter=".concept"  концепции
               button.button data-filter=".training"  практика
               button.button data-filter=".design"  дизайн
-
           .row.grid.pad-lf-rg-24
             .grid-item.concept.grid-item data-category="concept" 
               h3.name Mercury
@@ -111,7 +109,6 @@
             .grid-item.design data-category="design" 
               h3.name Lead
               = image_tag('portfolio/16.jpg', alt: 'Project Title', class: ['img-responsive'])
-
         .small-2.medium-1.large-1.columns.no-empty
     .myfooter.back-white
       = render 'footer'
@@ -120,7 +117,6 @@
     .row
       .container
         .small-0.medium-1.large-1.columns.no-empty
-
         .small-10.medium-10.large-10.columns
           .row.pad-lf-rg-24
             .section-title.center
@@ -143,7 +139,6 @@
                 span 2013
                 span -
                 span 2015
-
             .div
               .div
                 h3 ИДЕЛЬ
@@ -217,16 +212,58 @@
           .medium-3.large-3.columns
             .spincrement 3
             div ГОДА ОПЫТА
-
       .small-2.medium-1.large-1.columns.no-empty
-
       .div.stat-footer
         .myfooter.back-white
           = render 'footer'
 
   #section7.section
-    h1 contact
+    .contact
+      .container
+        .small-0.medium-1.large-1.columns.no-empty
+        .small-10.medium-10.large-10.columns.contact-pad
+          .row.pad-lf-rg-24
+            .section-title.center
+              span КОНТАКТЫ
+              hr
+          .row.pad-lf-rg-24
+            .small-0.medium-1.large-1.columns.no-empty
+            .small-12.medium-10.large-10.columns
+              .row
+                .small-4.medium-4.large-4.columns
+                  svg class="svg-icon" viewBox="0 0 20 20"
+                    path d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                  div
+                    | Россия, Казань, 420000
+                .small-4.medium-4.large-4.columns
+                  svg class="svg-icon" viewBox="0 0 20 20"
+                    path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"
+                  div
+                    | aydararchitect@gmail.com
+                .small-4.medium-4.large-4.columns
+                  svg class="svg-icon" enable-background=("new 0 0 100 100") version="1.1" viewbox=("0 0 100 125") xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    path d="M60.964,80.856c-8.067,0-16.995-6.883-24.496-18.884l-4.233-6.774c-9.073-14.519-10.341-27.89-3.287-34.225   c0.188-0.287,0.414-0.465,0.57-0.562l7.813-4.881c0.4-0.251,0.888-0.321,1.343-0.198c0.456,0.125,0.84,0.435,1.057,0.853   l7.992,15.374c0.578,1.016,0.258,2.323-0.741,2.952l-6.51,3.971c-1.761,1.652,0.187,5.442,1.52,7.575l6.923,11.077   c1.809,2.895,3.642,4.489,5.161,4.489c0.307,0,0.609-0.061,0.92-0.185l6.46-4.028c0.349-0.218,0.753-0.335,1.166-0.335   c0.739,0,1.415,0.362,1.825,0.973l10.387,14.302c0.276,0.38,0.382,0.858,0.292,1.319s-0.367,0.864-0.766,1.112l-7.813,4.881   c-0.234,0.145-0.491,0.234-0.757,0.268C64.273,80.545,62.652,80.856,60.964,80.856z M31.647,23.076   c-0.068,0.087-0.147,0.168-0.233,0.241c-6.004,5.081-4.554,16.891,3.693,30.085l4.233,6.774   c6.767,10.828,14.85,17.292,21.623,17.292c1.343,0,2.622-0.264,3.803-0.782c0.104-0.046,0.21-0.081,0.319-0.104l5.939-3.71   L62.31,60.871l-5.636,3.515c-0.069,0.043-0.14,0.081-0.215,0.113c-0.774,0.341-1.576,0.514-2.384,0.514l0,0   c-2.81,0-5.513-2.047-8.034-6.083l-6.923-11.076c-4.28-6.849-2.771-10.323-0.75-12.032c0.067-0.056,0.138-0.107,0.212-0.153   l5.664-3.453L37.57,19.376L31.647,23.076z"
+                    path d="M50,100C22.747,100,0.575,77.569,0.575,50C0.575,22.43,22.747,0,50,0s49.425,22.43,49.425,50   C99.425,77.569,77.253,100,50,100z M50,3.388C24.615,3.388,3.963,24.298,3.963,50S24.615,96.612,50,96.612S96.037,75.702,96.037,50   S75.385,3.388,50,3.388z"
+                  div
+                    | +7 927 039 35 00
+              form
+                .row
+                  | ОСТАВЬТЕ МНЕ СООБЩЕНИЕ
+                .row
+                  .large-6.columns
+                    label
+                      input placeholder="Имя" type="text"
+                  .large-6.columns
+                    label
+                      input placeholder="Email" type="text"
+                .row
+                  .large-12.columns
+                    label
+                      textarea style='max-height: 200px' placeholder="Сообщение"
+                .row
+                  .large-12.columns
+                    input.button type="submit" value="ОТПРАВИТЬ СООБЩЕНИЕ"
+            .small-0.medium-1.large-1.columns.no-empty
+        .small-2.medium-1.large-1.columns.no-empty
     .myfooter.back-grey
       = render 'footer'
-
-
