@@ -21,7 +21,6 @@ set :repo_url,       "git://github.com/AidarMingazov/aydar-architect.git"
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
-set :scm, :git
 set :format, :pretty
 set :pty, true
 
