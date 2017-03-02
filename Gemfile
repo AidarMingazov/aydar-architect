@@ -12,6 +12,8 @@ gem 'jquery-ui-rails'
 gem 'slim'
 gem 'active_link_to'
 
+gem 'unicorn'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
