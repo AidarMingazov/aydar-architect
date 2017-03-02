@@ -18,6 +18,10 @@ end
 
 group :development do
   gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  
   gem 'rails_layout'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
