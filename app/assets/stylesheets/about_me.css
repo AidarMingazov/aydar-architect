@@ -1,0 +1,17 @@
+#about-me{
+  padding: 75px 0;
+  font-family: 'Century Gothic';
+}
+#about-me span {
+  font-size: 26px;
+  color: #fff;
+  font-family: 'Century Gothic';
+}
+#about-me hr {
+  background: rgba(255,255,255,0.3);
+}
+.about-me-info{
+  font-family: 'Century Gothic';
+  color: #fff;
+  font-size: 16px;
+}

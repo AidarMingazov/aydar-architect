@@ -4,32 +4,26 @@ h1 {
 	color: #000;
 	margin: 0;
 	padding: 0;
-	font-family: 'Century Gothic';
+	font-family: 'Century Gothic' !important;
 }
 
 h2 {
-	font-family: 'Century Gothic';
+	font-family: 'Century Gothic' !important;
 }
 
 h4 {
-	font-family: 'Century Gothic';
+	font-family: 'Century Gothic' !important;
 }
-/*.main {
-	background-image: image-url("aydar.jpg"); 
-  padding: 0;
-  width: 100%;
-}*/
-
 .bor{
 	border: 1px solid black;
 }
 
 span{
-	font-family: 'Century Gothic';
+	font-family: 'Century Gothic' !important;
 }
 
 li{
-	font-family: 'Century Gothic';
+	font-family: 'Century Gothic' !important;
 }
 
 .pad-lf-rg-24{
@@ -46,6 +40,11 @@ li{
 
 .white-h2{
 	color: #fff;
+}
+
+
+body{
+	// min-width: 2000px;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 900px) {
