@@ -79,7 +79,7 @@
     .portfolio
       .container
         .small-0.medium-1.large-1.columns.no-empty
-        .small-10.medium-10.large-10.columns.portfolio-pad
+        .small-10.medium-10.large-10.columns.portfolio-pad.fixed-width
           .row.pad-lf-rg-24
             .section-title.center
               span ПОРТФОЛИО
@@ -91,133 +91,114 @@
               button.button data-filter=".training"  практика
               button.button data-filter=".design"  дизайн
           .row.grid.pad-lf-rg-24
-            .grid-item.concept.grid-item data-category="concept" 
-              h3.name Mercury
+            div.grid-item.concept data-category="concept" 
               = image_tag('portfolio/1.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.grid-item--width2.concept data-category="concept" 
-              h3.name Tellurium
+            div.grid-item.concept data-category="concept" 
               = image_tag('portfolio/2.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.training.grid-item data-category="training" 
-              h3.name Lead
+            div.grid-item.training data-category="training" 
               = image_tag('portfolio/3.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.training.grid-item--width1-5 data-category="training" 
-              h3.name Mercury
+            div.grid-item.training data-category="training" 
               = image_tag('portfolio/4.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design.grid-item data-category="design" 
-              h3.name Tellurium
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/5.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design.grid-item--width1-5 data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/6.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/7.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/8.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/9.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/10.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/11.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/12.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/13.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/14.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/15.jpg', alt: 'Project Title', class: ['img-responsive'])
-            .grid-item.design data-category="design" 
-              h3.name Lead
+            div.grid-item.design data-category="design" 
               = image_tag('portfolio/16.jpg', alt: 'Project Title', class: ['img-responsive'])
         .small-2.medium-1.large-1.columns.no-empty
     .myfooter.back-white
       = render 'footer'
 
   #section5.section
-    .row
-      .container
+    #career.container
+      .row
         .small-0.medium-1.large-1.columns.no-empty
         .small-10.medium-10.large-10.columns
           .row.pad-lf-rg-24
             .section-title.center
-              h2 ОПЫТ
+              span ОПЫТ
               hr
-            .div
+            .row.small-6.medium-6.large-6.columns.career-item
               .div
-                h3 СТУДИЯ АРХИТЕКТУРЫ И УБРАНИСТИКИ
-                span Petro IERONIMO
-                span и
-                span Massimo DE MARIA
+                div.span СТУДИЯ АРХИТЕКТУРЫ И УБРАНИСТИКИ
+                div
+                  span Petro IERONIMO
+                  span  и 
+                  span Massimo DE MARIA
                 span ПОМОЩНИК АРХИТЕКТОРА
               .div
                 span 2015
-            .div
+            .row
+              .small-6.medium-6.large-6.columns
+              .small-6.medium-6.large-6.columns.career-item
+                .div
+                  div.span IP-GROUP
+                  div.span ПОМОЩНИК АРХИТЕКТОРА-ДИЗАЙНЕРА
+                .div
+                  span 2013
+                  span -
+                  span 2015
+            .row.small-6.medium-6.large-6.columns.career-item
               .div
-                h3 IP-GROUP
-                span ПОМОЩНИК АРХИТЕКТОРА-ДИЗАЙНЕРА
-              .div
-                span 2013
-                span -
-                span 2015
-            .div
-              .div
-                h3 ИДЕЛЬ
+                span ИДЕЛЬ
                 span ПРОЕКТИРОВЩИК
               .div
                 span 2012
                 span -
                 span 2013
-        .small-2.medium-1.large-1.columns.no-empty
-
-    .row
-      .container
-        .small-0.medium-1.large-1.columns.no-empty
-        .small-10.medium-10.large-10.columns
           .row.pad-lf-rg-24
             .section-title.center
-              h2 ОБРАЗОВАНИЕ
+              span ОБРАЗОВАНИЕ
               hr
-            .div
+            .row.small-6.medium-6.large-6.columns.career-item
               .div
-                h3 КАЗАНСКИЙ ГОСУДАРСТВЕННЫЙ 
-                h3 АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ УНИВЕРСИТЕТ
+                span КАЗАНСКИЙ ГОСУДАРСТВЕННЫЙ 
+                span АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ УНИВЕРСИТЕТ
                 span АСПИРАТН
               .div
                 span 2016
                 span -
                 span НАСТОЯЩИЕ ВРЕМЯ
-            .div
+            .row
+              .small-6.medium-6.large-6.columns
+              .small-6.medium-6.large-6.columns.career-item
+                .div
+                  span КАЗАНСКИЙ ГОСУДАРСТВЕННЫЙ 
+                  span АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ УНИВЕРСИТЕТ
+                  span СПЕЦИАЛИСТ
+                .div
+                  span 2010
+                  span -
+                  span 2016
+            .row.small-6.medium-6.large-6.columns.career-item
               .div
-                h3 КАЗАНСКИЙ ГОСУДАРСТВЕННЫЙ 
-                h3 АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ УНИВЕРСИТЕТ
-                span СПЕЦИАЛИСТ
-              .div
-                span 2010
-                span -
-                span 2016
-
-            .div
-              .div
-                h3 ЛИЦЕЙ-ИНТЕРНАТ №7
+                span ЛИЦЕЙ-ИНТЕРНАТ №7
                 span ПОЛНОЕ СРЕДНЕЕ ОБРАЗОВАНИЕ
               .div
                 span 2005
                 span -
                 span 2013
-
         .small-2.medium-1.large-1.columns.no-empty
-    .myfooter.back-grey
-      = render 'footer'
+      .myfooter.back-grey
+        = render 'footer'
 
   
   / #section6.section.moveDown data-percentage="80" data-centered="true"

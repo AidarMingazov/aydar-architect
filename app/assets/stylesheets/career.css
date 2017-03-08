@@ -1,0 +1,13 @@
+#career{
+  padding: 75px 0;
+}
+#career .section-title span {
+  font-size: 26px;
+  color: #6e6e6e;
+}
+#career .section-title hr {
+  background: rgba(255,255,255,0.3);
+}
+.career-item div span{
+
+}
