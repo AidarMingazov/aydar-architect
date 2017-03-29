@@ -84,45 +84,46 @@
             .section-title.center
               span ПОРТФОЛИО
               hr
-          .row.pad-lf-rg-24.filter-container
-            .button-group.filters-button-group
-              button.button.is-checked data-filter="*"  Все
-              button.button data-filter=".concept"  концепции
-              button.button data-filter=".training"  практика
-              button.button data-filter=".design"  дизайн
-          .row.grid.pad-lf-rg-24
-            div.grid-item.concept data-category="concept" 
-              = image_tag('portfolio/1.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.concept data-category="concept" 
-              = image_tag('portfolio/2.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.training data-category="training" 
-              = image_tag('portfolio/3.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.training data-category="training" 
-              = image_tag('portfolio/4.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/5.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/6.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/7.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/8.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/9.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/10.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/11.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/12.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/13.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/14.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/15.jpg', alt: 'Project Title', class: ['img-responsive'])
-            div.grid-item.design data-category="design" 
-              = image_tag('portfolio/16.jpg', alt: 'Project Title', class: ['img-responsive'])
+            .categories
+              ul.cat
+                li
+                  ol.type
+                    li
+                      a.filter.active data-filter="*" href="#"  ВСЁ
+                    li
+                      a.filter data-filter=".web" href="#"  КОНЦЕПЦИИ
+                    li
+                      a.filter data-filter=".app" href="#"  ПРАКТИКА
+                    li
+                      a.filter data-filter=".branding" href="#"  ДИЗАЙН
+              .clearfix
+            .row
+              .portfolio-items
+                .small-6.medium-6.large-4.columns.web
+                  .portfolio-item
+                    = image_tag('portfolio/1.jpg', rel: "prettyPhoto", alt: 'Project Title')
+                .small-6.medium-6.large-4.columns.app
+                  .portfolio-item
+                    = image_tag('portfolio/2.jpg', rel: "prettyPhoto", alt: 'Project Title')
+                .small-6.medium-6.large-4.columns.web
+                  .portfolio-item
+                    = image_tag('portfolio/3.jpg', rel: "prettyPhoto", alt: 'Project Title')
+                .small-6.medium-6.large-4.columns.web
+                  .portfolio-item
+                    = image_tag('portfolio/4.jpg', rel: "prettyPhoto", alt: 'Project Title')
+                .small-6.medium-6.large-4.columns.app
+                  .portfolio-item
+                    = image_tag('portfolio/5.jpg', rel: "prettyPhoto", alt: 'Project Title')
+                .small-6.medium-6.large-4.columns.branding
+                  .portfolio-item
+                    = image_tag('portfolio/6.jpg', rel: "prettyPhoto", alt: 'Project Title')
+                .small-6.medium-6.large-4.columns.branding.app
+                  .portfolio-item
+                    = image_tag('portfolio/7.jpg', rel: "prettyPhoto", alt: 'Project Title')
+                .small-6.medium-6.large-4.columns.web
+                  .portfolio-item
+                    = image_tag('portfolio/8.jpg', rel: "prettyPhoto", alt: 'Project Title')
+
         .small-2.medium-1.large-1.columns.no-empty
     .myfooter.back-white
       = render 'footer'

@@ -10,97 +10,91 @@
   padding: 75px 0;
 }
 
-.filter-container{
-  margin: 0 auto;
-}
-
 .portfolio-pad{
   padding-bottom: 100px;
 }
 
-.button {
-  display: inline-block;
-  padding: 0.5em 1.0em;
-  margin-bottom: 10px;
-  background: #EEE;
-  border: none;
-  border-radius: 7px;
-  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
-  color: #222;
-  font-family: 'Century Gothic';
-  font-size: 16px;
-  cursor: pointer;
+
+#portfolio {
+  padding: 80px 0;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(49%, #f4f5f6), color-stop(100%, #ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
 }
-
-.button:hover {
-  background-color: #8CF;
-  color: #222;
-}
-
-.button:active,
-.button.is-checked {
-  background-color: #28F;
-}
-
-.button.is-checked {
-  color: white;
-}
-
-.button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
-}
-
-/* ---- button-group ---- */
-
-.button-group:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.button-group .button {
-  float: left;
-  border-radius: 0;
-  margin-left: 0;
-  margin-right: 1px;
-}
-
-.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
-
-/* ---- grid ---- */
-
-.grid {
+.categories {
+  padding-bottom: 30px;
   text-align: center;
-
 }
-
-/* clear fix */
-.grid:after {
-  /*content: '';*/
-  /*display: block;*/
-  /*clear: both;*/
-}
-
-/* ---- .element-item ---- */
-
-.grid-item {
-/*  position: relative;
-  float: left;
-*/
-  display: -moz-inline-stack;
+ul.cat li {
   display: inline-block;
-  *display: inline;
-  
-  /*padding: 5px;*/
 }
-
-.grid-item > * {
-  margin: 0;
-  padding: 0;
+ol.type li {
+  display: inline-block;
+  margin-left: 20px;
 }
-
-.grid-item img, .grid-item{ 
-  width: 300px;
+ol.type li a {
+  background: #5b5b5b;
+  color: #6e6e6e;
+  font-family: 'Century Gothic' !important;
+  padding: 6px 14px;
+}
+ol.type li a.active, ol.type li a:hover {
+  background: #30b6c2;
+}
+.isotope-item {
+  z-index: 2
+}
+.isotope-hidden.isotope-item {
+  z-index: 1
+}
+.isotope, .isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  transition-duration: 2s;
+}
+.isotope-item {
+  margin-right: -1px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.isotope {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
+}
+/* расширение картинки */
+.portfolio-item {
+  margin: 15px 0;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.portfolio-item:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.portfolio-item{
   height: 200px;
+  overflow: hidden;
+  position: relative;
 }
