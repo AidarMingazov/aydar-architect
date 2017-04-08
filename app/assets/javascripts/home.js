@@ -29,15 +29,27 @@ $(document).ready(function() {
         }, 250);
       }
 
-      //incrementalNumber
+      // CounterUp
       if (nextIndex == 6){
-        $('.spincrement').spincrement({
-          from: 0,
-          duration: 1500,
-          easing: 'easeInCirc'
+        $('.counter').each(function() {
+          var $this = $(this),
+              countTo = $this.attr('data-count');
+          $({ countNum: $this.text()}).animate({
+            countNum: countTo
+          },
+          {
+            duration: 2000,
+            easing:'linear',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+              $this.text(this.countNum);
+              // alert('finished');
+            }
+          });  
         });
       }
-
     },
     afterLoad: function(anchorLink, index){
       if (index == 4){
@@ -80,26 +92,10 @@ $(document).ready(function() {
         // });
 
         $(".filter").click(function () {
-          $('.portfolio').css({"height":($(window).height()+"px")});
+          $('.portfolio').css({"height":(($(window).height()+100)+"px")});
           return false;    
         });
       }
-
-
-
-
-      // // CounterUp
-      // if (index == 6){
-      //   $(document).ready(function( $ ) {
-      //     if($("span.count").length > 0){ 
-      //       $('span.count').counterUp({
-      //         delay: 10, // the delay time in ms
-      //         time: 1500 // the speed time in ms
-      //       });
-      //     }
-      //   });
-      // }
-
     }
   });
 });

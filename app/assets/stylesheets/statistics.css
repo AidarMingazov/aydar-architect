@@ -5,3 +5,15 @@
 .stat-footer{
 
 }
+
+.counter{
+  color: #3fbac9;
+  font-size: 56px;
+  /*font-style: bold;*/
+}
+
+.counter-title{
+  margin-top: 15px;
+  font-size: 20px;
+  color: #fff;
+}

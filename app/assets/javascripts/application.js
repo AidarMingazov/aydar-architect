@@ -22,9 +22,11 @@ $(function(){
   $(window).load(function() {
       var $container = $('.portfolio-items');
       $container.isotope({
+          itemSelector: '.port-item',
+          percentPosition: true,
           filter: '*',
-          animationOptions: {
-              duration: 750,
+          animationOptions: { 
+              duration: 2000,
               easing: 'linear',
               queue: false
           }
