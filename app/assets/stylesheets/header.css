@@ -40,9 +40,6 @@ li a:hover{
   color: #fff;
 }
 
-.no-empty{
-  min-height: 1px;
-}
 .active>a{
   background: none !important;
 }

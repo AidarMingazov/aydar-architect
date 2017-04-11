@@ -7,15 +7,13 @@
   #section2.section
     #about-me
       .container
-        .small-0.medium-1.large-1.columns.no-empty
-        .small-10.medium-10.large-10.columns
+        .small-10.medium-10.large-10.columns.small-centered
           .row.pad-lf-rg-24
             .section-title.center
               span ОБО МНЕ
               hr
           .row.pad-lf-rg-24
-            .small-0.medium-0.large-1.columns.no-empty
-            .small-12.medium-12.large-10.columns
+            .small-12.medium-12.large-10.columns.small-centered
               div.about-me-info
                 | Я профессиональный 3D визуализатор и начинающий инженер-архитектор.
               div.about-me-info
@@ -30,17 +28,13 @@
                 | для меня уникальный. Ниже Вы можете ознакомиться подробнее с каждой
               div.about-me-info
                 | услугой.
-
-            .small-0.medium-0.large-1.columns.no-empty
-
-        .small-2.medium-1.large-1.columns.no-empty
     .myfooter.back-white
       = render 'footer'
+      
   #section3.section
     #skills
       .container
-        .small-0.medium-1.large-1.columns.no-empty
-        .small-10.medium-10.large-10.columns
+        .small-10.medium-10.large-10.columns.small-centered
           .row.pad-lf-rg-24
             .section-title.center
               span НАВЫКИ
@@ -71,15 +65,13 @@
               span.chart data-percent="15"
                 span.percent 0
               h4 Revit
-        .small-2.medium-1.large-1.columns.no-empty
     .myfooter.back-grey
       = render 'footer'
 
   #section4.section
     .portfolio#portfolio
       .container
-        .small-0.medium-1.large-1.columns.no-empty
-        .small-10.medium-10.large-10.columns.portfolio-pad.fixed-width
+        .small-10.medium-10.large-10.columns.small-centered.portfolio-pad.fixed-width
           .row.pad-lf-rg-24
             .section-title.center
               span ПОРТФОЛИО
@@ -123,15 +115,12 @@
                 .small-6.medium-6.large-4.columns.web.port-item
                   .portfolio-item
                     = image_tag('portfolio/8.jpg', rel: "prettyPhoto", alt: 'Project Title')
-
-        .small-2.medium-1.large-1.columns.no-empty
     .myfooter.back-white
       = render 'footer'
 
   #section5.section
     #career
-      .small-0.medium-1.large-1.columns.no-empty
-      .small-10.medium-10.large-10.columns.push-footer
+      .small-10.medium-10.large-10.columns.push-footer.small-centered
         .row.pad-lf-rg-24
           .section-title.center
             span ОПЫТ
@@ -144,12 +133,14 @@
                 span  и 
                 span Massimo DE MARIA
               div.span ПОМОЩНИК АРХИТЕКТОРА
-            div.career-years-container
+            div.career-years-container-left
+              br
+              br
               span 2015
 
           div
             .career-item.pad-0
-              div.career-years-container
+              div.career-years-container-right
                 span
                 br
                 span 2013
@@ -165,7 +156,7 @@
             div.career-info-container
               div.span ИДЕЛЬ
               div.span ПРОЕКТИРОВЩИК
-            div.career-years-container
+            div.career-years-container-left
                 span
                 br
                 span 2012
@@ -184,21 +175,21 @@
               div.span КАЗАНСКИЙ ГОСУДАРСТВЕННЫЙ 
               div.span АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ УНИВЕРСИТЕТ
               div.span АСПИРАНТ
-            div.career-years-container
+            div.career-years-container-left
                 span
                 br
                 span 2016
                 br
                 span -
                 br
-                span НАСТОЯЩИЕ ВРЕМЯ
+                span.real-time НАСТОЯЩЕЕ ВРЕМЯ
           
           div.career-item
             div.career-info-container
               div.span КАЗАНСКИЙ ГОСУДАРСТВЕННЫЙ 
               div.span АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ УНИВЕРСИТЕТ
               div.span СПЕЦИАЛИСТ
-            div.career-years-container
+            div.career-years-container-right
                 span
                 br
                 span 2010
@@ -211,7 +202,7 @@
             div.career-info-container
               div.span ЛИЦЕЙ-ИНТЕРНАТ №7 
               div.span ПОЛНОЕ СРЕДНЕЕ ОБРАЗОВАНИЕ
-            div.career-years-container
+            div.career-years-container-left
                 span
                 br
                 span 2005
@@ -219,24 +210,19 @@
                 span -
                 br
                 span 2010
-
-      .small-2.medium-1.large-1.columns.no-empty
     .myfooter.back-grey
       = render 'footer'
 
-  
-  / #section6.section.moveDown data-percentage="80" data-centered="true"
   #section6.section.fp-auto-height
     .stat
-      .small-0.medium-1.large-1.columns.no-empty
-      .small-10.medium-10.large-10.columns
+      .small-10.medium-10.large-10.columns.small-centered
         .row.pad-lf-rg-24
-          .section-title.center
-            h2.white-h2 СТАТИСТИКА
+          .section-title.center.white-color
+            span СТАТИСТИКА
             hr
         .row.pad-lf-rg-24
           .medium-3.large-3.columns.pad-0
-            div.counter data-count="15" 0
+            div.counter data-count="18" 0
             div.counter-title ДОВОЛЬНЫХ КЛИЕНТОВ
           .medium-3.large-3.columns.pad-0
             div.counter data-count="2600" 0
@@ -247,7 +233,6 @@
           .medium-3.large-3.columns.pad-0
             div.counter data-count="3" 0
             div.counter-title ГОДА ОПЫТА
-      .small-2.medium-1.large-1.columns.no-empty
       .div.stat-footer
         .myfooter.back-white
           = render 'footer'
@@ -255,15 +240,14 @@
   #section7.section
     .contact
       .container
-        .small-0.medium-1.large-1.columns.no-empty
-        .small-10.medium-10.large-10.columns.contact-pad
+        / .small-0.medium-1.large-1.columns.no-empty
+        .small-10.medium-10.large-10.columns.contact-pad.small-centered
           .row.pad-lf-rg-24
             .section-title.center
               span КОНТАКТЫ
               hr
           .row.pad-lf-rg-24
-            .small-0.medium-1.large-1.columns.no-empty
-            .small-12.medium-10.large-10.columns
+            .small-12.medium-10.large-10.columns.small-centered
               .row
                 .small-4.medium-4.large-4.columns
                   svg class="svg-icon" viewBox="0 0 20 20"
@@ -298,7 +282,5 @@
                 .row
                   .large-12.columns
                     input.button type="submit" value="ОТПРАВИТЬ СООБЩЕНИЕ"
-            .small-0.medium-1.large-1.columns.no-empty
-        .small-2.medium-1.large-1.columns.no-empty
     .myfooter.back-grey
       = render 'footer'

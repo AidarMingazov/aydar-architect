@@ -32,6 +32,20 @@ h1, h2, h3, h4, div, span, li {
 	color: #fff;
 }
 
+.white-color{
+	color: #fff;	
+}
+
+.section-title span {
+	font-size: 26px !important;
+  font-weight: bold;
+}
+
+.no-empty{
+  min-height: 1px;
+  min-width: 1px;
+}
+
 
 body{
 	// min-width: 2000px;
@@ -86,13 +100,11 @@ body{
 #section4 {
 	background: #6e6e6e;
 	text-align: normal;
-
 }
 #section6{
 	background: #6e6e6e;
 }
 #section7{
-	text-align: normal;
 }
 
 // #section6,
