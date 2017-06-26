@@ -1,11 +1,11 @@
 .myMenu.top-bar
-  .small-0.medium-1.large-1.columns.no-empty
-  .small-0.medium-2.large-2.columns.pad-rg-0
+  .small-0.medium-0.large-1.columns.no-empty
+  .small-2.medium-3.large-2.columns.pad-rg-0
     ul.medium-horizontal.menu.pad-rg-0
       li data-menuanchor="1"
         = active_link_to 'Айдар Насыров', '#1', class: 'name pad-rg-0', active: :exclusive
 
-  .small-10.medium-8.large-8.columns.navigator
+  .small-10.medium-9.large-8.columns.navigator
     ul.medium-horizontal.align-right.menu
       li data-menuanchor="7"
         = active_link_to 'КОНТАКТЫ', '#7', active: :exclusive
@@ -18,5 +18,5 @@
       li data-menuanchor="2"
         = active_link_to 'ОБО МНЕ', '#2', active: :exclusive
   
-  .small-2.medium-1.large-1.columns.blog
-    = link_to 'БЛОГ', '/blog', class: 'blog-btn'
+  / .small-2.medium-1.large-1.columns.blog
+    / = link_to 'БЛОГ', '/blog', class: 'blog-btn'

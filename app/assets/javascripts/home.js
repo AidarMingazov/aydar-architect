@@ -91,10 +91,10 @@ $(document).ready(function() {
         //   });
         // });
 
-        $(".filter").click(function () {
-          $('.portfolio').css({"height":(($(window).height()+100)+"px")});
-          return false;    
-        });
+        // $(".filter").click(function () {
+        //   $('.portfolio').css({"height":(($(window).height()+100)+"px")});
+        //   return false;    
+        // });
       }
     }
   });

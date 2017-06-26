@@ -22,6 +22,7 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
+  config.assets.digest = true
 
   config.consider_all_requests_local       = false
   
@@ -29,11 +30,9 @@ Rails.application.configure do
 
   config.serve_static_assets = true
 
-  config.assets.precompile += %w(vendor/assets/images/*)
+  Rails.application.config.assets.precompile += %w( *.js ^[^_]*.css *.css.erb )
 
   config.assets.compile = true
-  
-  config.assets.digest = true
 
   config.assets.enabled = true
 

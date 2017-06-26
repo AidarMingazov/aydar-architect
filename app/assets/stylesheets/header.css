@@ -12,20 +12,17 @@
   background: none !important;
 }
 
-
 .myMenu {
   position: absolute;
   height: 52px;
   top: 80%;
   min-width: 100%;
   z-index: 70;
-
   background: #45b5c9; /* Old browsers */
   background: -moz-linear-gradient(-35deg,  #45b5c9 0%, #26cac9 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-35deg,  #45b5c9 0%,#26cac9 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(145deg,  #45b5c9 0%,#26cac9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45b5c9', endColorstr='#26cac9',GradientType=0 ); /* IE6-9 */
-
   -webkit-transition: all 0.9s ease;
   -moz-transition: all 0.9s ease;
   -o-transition: all 0.9s ease;
@@ -40,13 +37,27 @@ li a:hover{
   color: #fff;
 }
 
-.active>a{
+.menu .active > a{
   background: none !important;
 }
 
 .name, .blog-btn{
   color: #fff !important;
   font-weight: bold;
+}
+
+.menu .active .name{
+  font-weight: 500 !important;
+  font-size: 20px;
+}
+
+.menu .name{
+  font-weight: 500 !important;
+  font-size: 20px;
+} 
+
+.menu .name:hover{
+  font-weight: 700 !important;
 }
 
 .blog{
