@@ -12,7 +12,8 @@ gem 'jquery-ui-rails'
 gem 'slim'
 gem 'active_link_to'
 
-gem 'unicorn'
+# gem 'unicorn'
+
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -23,6 +24,7 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-rvm'
+  gem 'capistrano3-puma',   require: false
   
   gem 'rails_layout'
   gem 'web-console'
